@@ -1,0 +1,26 @@
+Proceso Primos
+	definir indice,num,dato,n,i como entero;
+	
+	
+	
+	para n <- 1 hasta 1000 Con Paso 1 Hacer
+		
+		
+		num<-0;
+		para i<-1 hasta n Hacer
+			si n%i=0 Entonces
+				num<-num +1;
+			FinSi
+		FinPara
+		
+		si num=2 Entonces
+			Escribir n, " Es primo";
+		sino 
+			Escribir n, " No es primo";
+		FinSi
+		
+	FinPara
+	
+	
+	
+FinProceso
