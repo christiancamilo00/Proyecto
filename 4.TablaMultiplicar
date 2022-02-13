@@ -1,0 +1,12 @@
+Proceso TablaMultiplicar
+	Definir control Como Entero;
+	Definir multiplo Como Entero;
+	Definir num Como entero;
+	multiplo <- 1;
+	num <- 5;	
+	Para control <- 1 hasta 10 con paso 1 Hacer
+		Escribir control, " * ",num," = ",control* num;
+		
+	FinPara
+FinProceso
+

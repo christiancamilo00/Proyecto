@@ -1,0 +1,27 @@
+Proceso FiguraCicloMientras
+	Definir control Como entero;
+	Definir control1,control2 Como entero;
+	Definir incremento Como Entero;
+	control  <- 10;
+	control1  <- 1;
+	
+	Mientras control >  1 Hacer
+		control1  <- 1;
+		Mientras control1 <  control Hacer
+			
+			
+			
+			Escribir "*"Sin Saltar;
+			
+			control1  <- control1 + 1;
+			
+			
+		FinMientras
+		
+		
+		Escribir "*" ;
+		
+		control  <- control - 1;
+	FinMientras
+	
+FinProceso
