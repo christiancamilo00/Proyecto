@@ -1,0 +1,23 @@
+SubProceso  Tabla(dato)
+	Definir f,c Como Entero;;
+	Definir matriz,respuesta Como entero;
+	Dimension matriz[11,11];
+	respuesta <- dato;
+	
+	para f <- 1 hasta 10 Con Paso 1 Hacer
+		para c <- 1 hasta 10 con paso 1 Hacer
+			
+			matriz[f,c]<-c;	
+			Escribir matriz[f,c],"x",f, "  " sin Saltar;	
+		FinPara
+		Escribir  " ";
+	FinPara
+FinSubProceso
+
+
+Proceso TablaF
+	Definir dato Como Entero;
+	dato <- 0;
+	Tabla(dato);
+	
+FinProceso

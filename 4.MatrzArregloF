@@ -1,0 +1,25 @@
+SubProceso  MatrzArreglo(dato)
+	
+	Definir matriz,respuesta Como entero;
+	Definir f,c,num Como Entero;
+	Dimension matriz[4,5];
+	respuesta <- dato;
+	
+	num<-0;
+	para f <- 0 hasta 3 Con Paso 1 Hacer
+		para c <- 0 hasta 4 con paso 1 Hacer
+			num<-num +1;
+			matriz[f,c]<-num;	
+			Escribir matriz[f,c], " " sin Saltar;	
+		FinPara
+		Escribir  " ";
+	FinPara
+	
+FinSubProceso
+
+Proceso MatrzArregloF
+	Definir dato Como Entero;
+	dato <- 0;
+	MatrzArreglo(dato);
+	
+FinProceso
