@@ -1,0 +1,17 @@
+Proceso Tabla
+	Definir f,c Como Entero;;
+	Definir matriz Como entero;
+	Dimension matriz[11,11];
+	
+	para f <- 1 hasta 10 Con Paso 1 Hacer
+		para c <- 1 hasta 10 con paso 1 Hacer
+			
+			matriz[f,c]<-c;	
+			Escribir matriz[f,c],"x",f, "  " sin Saltar;	
+		FinPara
+		Escribir  " ";
+	FinPara
+	
+	
+	
+FinProceso

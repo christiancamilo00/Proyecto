@@ -1,0 +1,18 @@
+Proceso Matrz
+	Definir f,c,num Como Entero;;
+	Definir matriz Como entero;
+	Dimension matriz[4,5];
+	
+	num<-0;
+	para f <- 0 hasta 3 Con Paso 1 Hacer
+		para c <- 0 hasta 4 con paso 1 Hacer
+			num<-num +1;
+			matriz[f,c]<-num;	
+			Escribir matriz[f,c], " " sin Saltar;	
+		FinPara
+		Escribir  " ";
+	FinPara
+	
+	
+	
+FinProceso

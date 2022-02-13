@@ -1,0 +1,26 @@
+Proceso Aleatorios
+	definir indice,num,dato,i,vector,j como entero;
+	Dimension vector[20];
+	
+	
+	para i <- 1 hasta 19 Con Paso 1 Hacer
+		
+		dato<-azar(100);
+		vector[i] <- dato;
+		//escribir " numero ",i,"  ",vector[i];
+		
+		num<-0;
+		
+			si vector[i]%2=0 Entonces
+				Escribir vector[i], " Es par";
+			sino 
+				Escribir vector[i], " Es impar";
+			FinSi
+		
+	
+	FinPara
+	
+
+	
+	
+FinProceso
