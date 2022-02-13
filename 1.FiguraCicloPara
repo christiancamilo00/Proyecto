@@ -1,0 +1,15 @@
+Proceso FiguraCicloPara
+	Definir control Como Entero;
+	Definir control1 Como Entero;
+	Definir ast Como entero;
+	ast <- 1;	
+	Para control <- 0 hasta 9 con paso 1 Hacer
+		Para control1 <- ast hasta control con paso 1 Hacer
+			
+				escribir "*", Sin Saltar;
+			
+		FinPara
+		escribir "*";
+	FinPara
+FinProceso
+

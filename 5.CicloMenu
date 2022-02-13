@@ -1,0 +1,17 @@
+Proceso CicloMenu
+	Definir control Como entero;
+	Definir incremento Como Entero;
+	
+	incremento  <- 1;
+	
+	Repetir
+		
+		Escribir "Menu Usuario";
+		Escribir "1.Captura nombre";
+		Escribir "2.Saludar persona";
+		Escribir "3.Salir del sistema";
+		Leer control;
+		
+	Hasta Que control = 3
+	
+FinProceso
