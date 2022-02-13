@@ -1,0 +1,18 @@
+Algoritmo NomApeEdaEst
+	Definir nombre Como Caracter;
+	Definir apellido Como Caracter;
+	Definir edad Como Entero;
+	Definir estatura Como Real;	
+	
+	
+	Escribir "Por favor escribir su nombre";
+	Leer nombre;
+	Escribir "Por favor escribir su apellido";
+	Leer apellido;
+	Escribir "Que edad tienes";
+	Leer edad;
+	Escribir "Cuanto mides";
+	Leer estatura;
+	
+	
+FinAlgoritmo
