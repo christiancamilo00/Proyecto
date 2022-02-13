@@ -1,0 +1,41 @@
+Proceso TallerMotos
+	Definir ingreso Como Caracter;
+	Definir fecha Como Caracter;
+	Definir moto Como Caracter;
+	Definir pproducto Como Caracter;
+	Definir opcion Como Entero;
+	Definir cliente Como Caracter;
+	Definir ncliente Como Caracter;
+	Definir fechas Como Caracter;
+	Definir nmoto Como Caracter;
+	Definir amoto Como Caracter;
+	
+	Escribir "Taller de Motos El Maquinista, por favor elija una opcion";
+	Escribir "1. Ingreso de Motos";
+	Escribir "2. Salida de Motos";
+	Escribir "3. Salir";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Fecha de ingreso?";
+			Leer  fecha;
+			Escribir "Referencia de la moto?";
+			Leer  moto;
+			Escribir "Observaciones del cliente?";
+			Leer  cliente;
+			Escribir "Nombre del cliente?";
+			Leer  ncliente;
+		2:
+			Escribir "Fecha de salida?";
+			Leer  fechas;
+			Escribir "Novedades de la moto?";
+			Leer  nmoto;
+			Escribir "Arreglos realizados a la moto?";
+			Leer  amoto;
+		
+		De Otro Modo:
+			Escribir "Adios";	
+	FinSegun
+	
+FinProceso

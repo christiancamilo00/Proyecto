@@ -1,0 +1,34 @@
+Proceso VideoTienda
+	Definir nompelicula Como Caracter;
+	Definir opcion Como Entero;
+	Definir pelicula1 Como Caracter;
+	Definir pelicula2 Como Caracter;
+	Definir pelicula3 Como Caracter;
+	Definir recpelicula Como Caracter;
+	
+	pelicula1 <- "Titanic";
+	pelicula2 <- "Spiderman";
+	pelicula3 <- "titanic";
+	
+	Escribir "Tienda Porvenir por favor elija una opcion";
+	Escribir "1. Alquilar pelicula";
+	Escribir "2. Consultar peliculas disponibles";
+	Escribir "3. Recibir pelicula";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Como te llama la pelicula?";
+			Leer  nompelicula;
+		2:
+			Escribir "Las peliculas disponibles son: ";
+			Escribir pelicula1;
+			Escribir pelicula2;
+			Escribir pelicula3;
+			
+		3:
+			Escribir "Por favor ingrese  las novedades de la pelicula";
+			Leer recpelicula;
+	FinSegun
+	
+FinProceso

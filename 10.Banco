@@ -1,0 +1,40 @@
+Proceso Banco
+	Definir titular Como caracter;
+	Definir cantidad Como entero;
+	Definir ingreso Como entero;
+	Definir retiro Como entero;
+	Definir opcion Como entero;
+	
+	Escribir "Nombre del titular";
+	Leer titular;
+	Escribir "Escribir cantidad";
+	Leer cantidad;
+	Escribir "Su banco fiel, por favor elija una opcion";
+	Escribir "1. Realizar ingresos";
+	Escribir "2. Realizar retiros";
+	Escribir "3. Realizar consultas de valor";
+	Escribir "4. Salir";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Valor del ingreso?";
+			Leer  ingreso;
+			si ingreso < 0 Entonces
+				Escribir "El valor introducido es negativo";
+			FinSi
+			
+		2:
+			Escribir "Valor del retiro?";
+			Leer  retiro;
+			si retiro > cantidad Entonces
+				Escribir "El valor introducido es mayor al que tiene en la cuenta";
+			FinSi
+			
+		3:
+			Escribir "Su saldo es ", cantidad;
+		De Otro Modo:
+			Escribir "Hasta Luego";
+	FinSegun
+	
+FinProceso

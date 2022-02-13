@@ -1,0 +1,69 @@
+Proceso Prototipo
+	Definir opcion Como entero;
+	Definir contacto1 Como entero;
+	Definir contacto2 Como entero;
+	Definir contacto3 Como entero;
+	Definir buscar Como entero;
+	Definir eliminar Como entero;
+	Definir control Como entero;
+	
+	Repetir
+		
+		Escribir "Menu Usuario";
+		Escribir "1.Añadir contactos";
+		Escribir "2.Buscar contactos";
+		Escribir "3.Eliminar contactos";
+		Escribir "4.Salir del sistema";
+		Leer opcion;
+		
+		Segun opcion Hacer
+			1:
+				Escribir "Ingrese contacto";
+				Leer  contacto1;
+				Escribir "Ingrese contacto 2";
+				Leer  contacto2;
+				si contacto2 = contacto1 Entonces
+					Escribir "Ese contacto ya existe";
+				FinSi
+				Escribir "Ingrese contacto 3";
+				Leer  contacto3;
+				si contacto3 = contacto2 o contacto3 = contacto1 Entonces
+					Escribir "Ese contacto ya existe";
+				FinSi
+			2:
+				Escribir "Ingrese contacto a buscar: ";
+				Leer buscar;
+				si buscar = contacto3 o buscar = contacto2 o buscar = contacto1 Entonces
+					Escribir "El contacto",buscar," si existe";
+				sino
+					Escribir "El contacto no existe";
+				FinSi
+				
+			3:
+				Escribir "Ingrese contacto a eliminar: ";
+				Leer eliminar;
+				si eliminar = contacto1 Entonces
+					contacto1 <- 0;
+					Escribir "El contacto ",eliminar," ah sido eliminado";
+					sino
+					si eliminar = contacto2 Entonces
+						contacto2 <- 0;
+						Escribir "El contacto ",eliminar," ah sido eliminado";
+						sino
+						si eliminar = contacto3  Entonces
+							contacto3 <- 0;
+							Escribir "El contacto ",eliminar," ah sido eliminado";
+						SiNo escribir "El contacto ",eliminar," no existe";
+						FinSi
+					FinSi
+				FinSi
+			
+			De Otro Modo:
+				Escribir "Hasta Luego";
+		FinSegun
+		contacto1 <- contacto1;
+		contacto2 <- contacto2;
+		contacto3 <- contacto3;
+	Hasta Que opcion = 4
+	
+FinProceso

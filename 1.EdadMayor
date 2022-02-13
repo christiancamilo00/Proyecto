@@ -1,0 +1,14 @@
+Proceso EdadMayor
+	
+	Definir edad Como Entero;
+		
+	Escribir "Por favor escriba su edad";
+	Leer edad;
+	
+	
+			si edad >= 18 Entonces
+				Escribir "Usted es mayor de edad";
+			FinSi
+		
+	
+FinProceso
