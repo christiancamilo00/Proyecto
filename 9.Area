@@ -1,0 +1,50 @@
+Proceso Area
+	Definir largor Como entero;
+	Definir anchor Como entero;
+	Definir rec Como entero;
+	Definir baset Como entero;
+	Definir alturat Como Entero;
+	Definir tria Como real;
+	Definir opcion Como entero;
+	Definir baseme Como entero;
+	Definir basema Como Entero;
+	Definir alturatr Como Entero;
+	Definir trap Como real;
+	
+	Escribir "Calculo del area de figuras geometricas, por favor elija una opcion";
+	Escribir "1. Rectangulo";
+	Escribir "2. Triangulo";
+	Escribir "3. Trapecio";
+	Escribir "4. Salir";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Largo del rectangulo?";
+			Leer  largor;
+			Escribir "Ancho del rectangulo?";
+			Leer  anchor;
+			rec <- largor*anchor;
+			Escribir "El area del rectangulo es ", rec;
+		2:
+			Escribir "Base del triangulo?";
+			Leer  baset;
+			Escribir "Altura del triangulo ?";
+			Leer  alturat;
+			tria <- (baset*alturat)/2;
+			Escribir "El area del triangulo es ", tria;
+			
+		3:
+			Escribir "Base menor del trapesio?";
+			Leer  baseme;
+			Escribir "Base mayor del trapesio ?";
+			Leer  basema;
+			Escribir "Altura del trapesio ?";
+			Leer  alturatr;
+			trap <- ((basema+baseme)/2*alturatr);
+			Escribir "El area del trapesio es ", trap;
+		De Otro Modo:
+			Escribir "Hasta Luego";
+	FinSegun
+	
+FinProceso

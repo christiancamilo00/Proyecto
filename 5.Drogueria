@@ -1,0 +1,56 @@
+Proceso Drogueria
+	Definir producto Como Caracter;
+	Definir tproducto Como Caracter;
+	Definir cproducto Como Caracter;
+	Definir pproducto Como Caracter;
+	Definir opcion Como Entero;
+	Definir producto1 Como Caracter;
+	Definir producto2 Como Caracter;
+	Definir producto3 Como Caracter;
+	Definir pproducto1 Como Entero;
+	Definir pproducto2 Como Entero;
+	Definir pproducto3 Como Entero;
+	Definir devolucion Como Caracter;
+	Definir mdevolucion Como Caracter;
+	
+	producto1 <- "Compuatores";
+	pproducto1 <- 4500000;
+	producto2 <- "Televisores";
+	pproducto2 <-  2000000;
+	producto3 <- "Tabletas";
+	pproducto3 <- 800000;
+	
+	Escribir "Drogueria Mi Salud por favor elija una opcion";
+	Escribir "1. Compra Producto";
+	Escribir "2. Consultar de precios producto";
+	Escribir "3. Devolucion producto";
+	Escribir "4. Salir";
+	
+	Leer opcion;
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Nombre del producto?";
+			Leer  producto;
+			Escribir "Tipo de producto?";
+			Leer  tproducto;
+			Escribir "Cantidad de productos?";
+			Leer  cproducto;
+			Escribir "Precio de producto?";
+			Leer  pproducto;
+		2:
+			Escribir "Las productos disponibles con sus precios son: ";
+			Escribir producto1," Precio ",pproducto1;
+			Escribir producto2," Precio ",pproducto2;
+			Escribir producto3," Precio ",pproducto3;
+			
+		3:
+			Escribir "Por favor ingrese  el producto a devolver";
+			Leer devolucion;
+			Escribir "Por favor ingrese  el motivo de la devolucion";
+			Leer mdevolucion;
+		De Otro Modo:
+			Escribir "Hasta Luego";
+	FinSegun
+	
+FinProceso
