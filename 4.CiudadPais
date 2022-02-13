@@ -1,0 +1,14 @@
+Algoritmo CiudadPais
+	Definir ciudad Como Caracter;
+	Definir pais Como Caracter;
+	
+	
+	Escribir "Por favor escribir una ciudad capital";
+	Leer ciudad;
+	Escribir "Por favor escribir el pais";
+	Leer pais;
+	
+	Escribir "La ciudad ", ciudad ,", ",  " es la capital del pais ", pais;
+	
+	
+FinAlgoritmo

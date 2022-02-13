@@ -1,0 +1,30 @@
+Algoritmo NombreApellidoPadres
+	Definir nombre Como Caracter;
+	Definir apellido Como Caracter;
+	
+	Definir nombreMadre Como Caracter;
+	Definir apellidoMadre Como Caracter;
+	
+	Definir nombrePadre Como Caracter;
+	Definir apellidoPadre Como Caracter;
+	
+	
+	Escribir "Por favor escribir su nombre";
+	Leer nombre;
+	Escribir "Por favor escribir su apellido";
+	Leer apellido;
+	
+	Escribir "Por favor escribir el nombre de su madre";
+	Leer nombreMadre;
+	Escribir "Por favor escribir el apellido de su madre";
+	Leer apellidoMadre;
+	
+	Escribir "Por favor escribir el nombre de su padre";
+	Leer nombrePadre;
+	Escribir "Por favor escribir el apellido de su padre";
+	Leer apellidoPadre;
+	
+	Escribir "Yo ", nombre ," ", apellido, " soy el hijo de ", nombreMadre, " y ", nombrePadre;
+	
+	
+FinAlgoritmo
