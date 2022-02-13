@@ -1,0 +1,42 @@
+SubProceso  tienda(opcion)
+	Definir respuesta Como Entero;
+	Definir nompelicula,  pelicula1,  pelicula2,pelicula3, recpelicula Como Caracter;
+	respuesta <- opcion;
+	
+	pelicula1 <- "Titanic";
+	pelicula2 <- "Spiderman";
+	pelicula3 <- "titanic";
+	
+	Segun respuesta Hacer
+		1:
+			Escribir "Como te llama la pelicula?";
+			Leer  nompelicula;
+		2:
+			Escribir "Las peliculas disponibles son: ";
+			Escribir pelicula1;
+			Escribir pelicula2;
+			Escribir pelicula3;
+			
+		3:
+			Escribir "Por favor ingrese  las novedades de la pelicula";
+			Leer recpelicula;
+	FinSegun
+	
+FinSubProceso
+
+
+Proceso VideoTiendaF
+	
+	Definir opcion Como Entero;
+	
+	Escribir "Tienda Porvenir por favor elija una opcion";
+	Escribir "1. Alquilar pelicula";
+	Escribir "2. Consultar peliculas disponibles";
+	Escribir "3. Recibir pelicula";
+	Leer opcion;
+	
+	
+	tienda(opcion);
+	
+FinProceso
+

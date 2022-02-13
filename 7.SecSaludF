@@ -1,0 +1,49 @@
+SubProceso  SecSalud(nombre,apellido,peso,estatura)
+		
+	Definir imc Como Real;
+	
+	imc  <- peso / (estatura*estatura);
+	
+	si imc <= 18.5 Entonces
+		Escribir "Usted se encuentra en bajo peso";
+	SiNo
+		si imc >= 18.5 y imc <= 24.9  Entonces
+			Escribir "Usted se encuentra en el peso normal";
+		SiNo
+			si imc >= 25 y imc <= 29.9  Entonces
+				Escribir "Usted se encuentra en sobrepeso";
+			Sino
+				si imc >= 30  Entonces
+					Escribir "Usted se encuentra en obesidad";
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+FinSubProceso
+
+
+Proceso SecSaludF
+	
+	Definir opcion Como Entero;
+	
+	Definir peso Como Real;;
+	Definir estatura Como Real;
+	Definir nombre Como Caracter;
+	Definir apellido Como Caracter;
+	
+	Escribir "Por favor ingrese su nomnbre";
+	Leer nombre;
+	Escribir "Por favor ingrese su apellido";
+	Leer apellido;
+	Escribir "Por favor ingrese su peso en kilos";
+	Leer peso;
+	Escribir "Por favor ingrese su estatura en metros";
+	Leer estatura;
+	
+	
+	SecSalud(nombre,apellido,peso,estatura);
+	
+FinProceso
+

@@ -1,0 +1,16 @@
+SubProceso  edad(num1)
+	Definir respuesta Como Entero;
+	respuesta <- num1;
+	si respuesta < 18 Entonces
+		Escribir "Usted es menor de edad";
+	FinSi
+FinSubProceso
+
+
+Proceso EdadMenorF
+	Definir dato Como Entero;
+	Escribir "Digite la edad";
+	Leer dato;
+	edad(dato);
+	
+FinProceso
